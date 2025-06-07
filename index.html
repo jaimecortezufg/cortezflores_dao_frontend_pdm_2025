@@ -108,17 +108,17 @@
 
 				$("#tabla_detalles").DataTable({
 					language:{
-						url: "js/es-ES.js"
+						url: "js/es-ES.json"
 					},
 					responsive:true,
 					ajax: "http://localhost/cortezflores_dao_backend_pdm_2025/process.php?t=selectAll",
-					collums:[
+					columns:[
 						{data: 'id_persona'},
 						{data: 'nombres'},
 						{data: 'apellidos'},
 						{data: 'fnac'},
 						{data: 'telefono'},
-						{data: 'email'},
+						{data: 'email'}
 					]
 				});
 			});
